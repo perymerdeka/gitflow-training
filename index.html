@@ -4,8 +4,116 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Halaman Landing Page</title>
+    <style>
+         .nafbar{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: rgb(243, 67, 67);
+            padding: 10px;
+            flex-direction: row;
+            color: white;
+            font-size: 20px;
+        }
+        .nafbar img{
+            width: 60px;
+            height: 60px;
+        }
+         .nafbar ul{
+            list-style: none;
+        }
+        .nafbar li{
+            display: inline-block;
+            margin-right: 40px;
+            color: white;
+        }
+        .button1{
+            padding: 10px;
+            background-color: rgb(234, 84, 82);
+            color: white;
+            width: 80px;
+            height: 30px;
+            font-size: 13px;
+            border-top-left-radius: 5px;
+            border-top-right-radius: 5px;
+            border-bottom-left-radius: 5px;
+            border-bottom-right-radius: 5px;
+        }
+        .parent{
+            height: 100vh;
+            display: flex;
+        }
+        .konten1{
+            width: 100vh;
+            background-color: rgb(224, 61, 61);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+         .konten2{
+            width: 100vh;
+           background-image: url(foto.jpg);
+           background-repeat: no-repeat;
+           background-size: cover;
+        }
+        .tulisan{
+            width: 70vh;
+            height: 70vh;
+            font-size: 20px;
+        }
+         .button{
+            padding: 10px;
+            background-color: rgb(234, 84, 82);
+            color: white;
+            width: 150px;
+            height: 50px;
+            border-top-left-radius: 5px;
+            border-top-right-radius: 5px;
+            border-bottom-left-radius: 5px;
+            border-bottom-right-radius: 5px;
+            font-size: 13px;
+        }
+        
+        @media screen and (max-width: 900px) {
+
+          .nafbar{
+            flex-direction: column;
+          } 
+          .nafbar ul{
+            margin-top: 20px;
+          }  
+        }
+
+    </style>
 </head>
 <body>
-    <h1>Halaman Landing Page</h1>
+   <div class="nafbar">
+        <div style="display: flex; align-items: center;">
+            <img src="istockphoto-840599744-612x612-removebg-preview.png">
+            <b>WINA</b>
+        </div>
+        <ul>
+            <li> <b>Home</b></li>
+            <li> <b>About</b> </li>
+            <li> <b>Gallery</b> </li>
+            <li> <b>Blog</b> </li>
+            <li> <b>Contact</b> </li>
+            <li><button class="button1">Contact</button></li>
+        </ul>
+    </div>
+
+    <div class="parent">
+        <div class="konten1">
+            <div class="tulisan">
+                <p style="margin-bottom: 30px; color: white">HELLO THERE!</p>
+                <H1 style="margin-bottom: 30px; font-size: 35px; color: white;" >I'M WINA PRADNYANDARI</H1>
+                <p style="margin-bottom: 30px; color: white;">I'M GRADE 12 </p>
+                <p style="margin-bottom: 30px; color: white;">I'M A WEB DESIGNER </p>
+                <button class="button">EXPLORE MORE</button>
+            </div>
+        </div>
+        <div class="konten2">
+        </div>
+    </div>
 </body>
 </html>
